@@ -40,9 +40,33 @@ function decreasePrice(discountPrice){
 
 }
 
+function createRecipe(title, ingredients, menuItemType)
+{
+
+return {
+
+  title: title ,
+  ingredients: ingredients ,
+  type: menuItemType ,
 
 
 
+};
+
+
+}
+
+// function createMenuItem(name, price, type)
+// {
+// return {
+//
+//   name: name ,
+//   price: price ,
+//   type: type ,
+//
+// };
+//
+// }
 
 module.exports = {
   nameMenuItem,
@@ -50,5 +74,5 @@ module.exports = {
   addIngredients,
   formatPrice,
   decreasePrice,
-  // createRecipe
+  createRecipe
 };
