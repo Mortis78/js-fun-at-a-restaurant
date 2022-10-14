@@ -4,14 +4,16 @@ return 'Delicious ' + food
 
 };
 
-//function createMenuItem()
-//{
-// return {(food, price, type)
-//  }
-// }
+function createMenuItem()
+{
+return {
+  food, price, type
+}
+
+}
 module.exports = {
   nameMenuItem,
-  //createMenuItem,
+  createMenuItem,
   // addIngredients,
   // formatPrice,
   // decreasePrice,
