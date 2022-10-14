@@ -7,8 +7,7 @@ return 'Delicious ' + food
 function createMenuItem(name, price, type)
 {
 return {
-  //name, price, type
-  //
+
   name: name ,
   price: price ,
   type: type ,
@@ -28,11 +27,28 @@ else {
   return foodArray.push(food)
 }
  }
+
+function formatPrice(price){
+  return '$'+ price
+
+
+}
+//take cost into function, return cast at discounted price
+function decreasePrice(discountPrice){
+  return discountPrice - (discountPrice * .1)
+
+
+}
+
+
+
+
+
 module.exports = {
   nameMenuItem,
   createMenuItem,
   addIngredients,
-  // formatPrice,
-  // decreasePrice,
+  formatPrice,
+  decreasePrice,
   // createRecipe
 };
